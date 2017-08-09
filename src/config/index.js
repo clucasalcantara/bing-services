@@ -1,18 +1,18 @@
 import {
-    RESULTS_COUNT,
-    SAFE_SEARCH,
+	RESULTS_COUNT,
+	SAFE_SEARCH,
 } from "./constants"
 
 const getDefaultConfig = (term) => {
-    const properties = {
-        safeSearch: SAFE_SEARCH,
-        mkt: "en-us",
-        count: RESULTS_COUNT,
-    }
+	const properties = {
+		safeSearch: SAFE_SEARCH,
+		mkt: "en-us",
+		count: RESULTS_COUNT,
+	}
 
-    const params = { term, ...properties }
+	const params = { q: term, ...properties }
 
-    return params
+	return params
 }
 
 export default getDefaultConfig

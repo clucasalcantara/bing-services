@@ -1,7 +1,7 @@
 const DEFAULT_ENDPOINT = "https://api.cognitive.microsoft.com/bing/v5.0/images/search"
-const API_KEY = "YOUR_API_KEY_HERE"
-const RESULTS_COUNT = 10
-const SAFE_SEARCH = "Moderate"
+const API_KEY = process.env.BING_API_KEY
+const RESULTS_COUNT = process.env.RESULTS_COUNT
+const SAFE_SEARCH = process.env.SAFE_SEARCH
 
 export {
     API_KEY,
