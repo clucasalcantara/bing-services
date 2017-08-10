@@ -3,7 +3,7 @@
 
 ## Installation
 ```bash
-$ yarn add bing-services
+$ yarn add bing-services --API_KEY="1fds2vcx42300043bxv3cx4v533gfx43vc34" --RESULTS_COUNT="10" --SAFE_SEARCH="Moderate"
 ```
 
 ## Usage

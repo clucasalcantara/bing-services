@@ -1,9 +1,9 @@
 import { expect } from 'chai'
 import sinon from 'sinon'
 
-import getImages from "../src/api"
+import searchBingImages from "../src/api"
 
-describe('getImages', () => {
+describe('searchBingImages', () => {
 	let sandBox
 	let server
 
@@ -18,7 +18,7 @@ describe('getImages', () => {
 	})
 
 	it('should returns and response typeof object', () => {
-			getImages("cats")
+			searchBingImages("cats")
 			.then(response => {
 					expect(response).to.be.an('Object')
 			})
